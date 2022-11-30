@@ -1,17 +1,33 @@
 const { Schema, model } = require("mongoose");
 
 const contactoSchema = Schema({
-    nombre: {
+    hardware: {
         type: String,
         required: true
     },
-    email: {
+    nombre: {
         type: String,
         required: true,
         unique: true
 
     },
-    telefono: {
+    modelo: {
+        type: String,
+        required: true
+    },
+    marca: {
+        type: String,
+        required: true
+    },
+    descripcion: {
+        type: String,
+        required: true
+    },
+    lanzamiento: {
+        type: String,
+        required: true
+    },
+    link: {
         type: String,
         required: true
     }
